@@ -16,6 +16,12 @@
     </div>
   </nav>
   <div class="container">
+    <% if notice %>
+      <div ciass="alert alert-info">
+        <%=notice %>
+      </div>
+    <% end %>
+    
      <%= yield %>
   </div>
 </body>
